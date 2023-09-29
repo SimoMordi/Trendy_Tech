@@ -3,12 +3,13 @@ import { createSlice } from "@reduxjs/toolkit";
 
 
 const somethingSlice = createSlice({
-    name: "something",
-    initialState:"" ,
+    name: "counter",
+    initialState: 0,
     reducers: {
-        showSomething: (currentState) => currentState = "Hello"
-    }
+        doSomething: (currentState) => currentState + 1
+       
+        }
 })
 
-export const {showSomething } = somethingSlice.actions
+export const {doSomething } = somethingSlice.actions
 export default somethingSlice.reducer
