@@ -1,0 +1,22 @@
+#title {
+    text-align: center;
+    margin: auto;
+    font-size: 4.5rem;
+    color: rgb(11, 125, 141);
+    cursor: pointer;
+}
+
+#search {
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+   
+}
+#input {
+    height: 35px;
+    width: 500px;
+    border-radius: 15px;
+    border: 2px solid rgb(153, 145, 145);
+    color: rgb(183, 178, 178);
+    
+}

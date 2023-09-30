@@ -1,11 +1,12 @@
 import { useState } from 'react'
 import './App.css'
-import About from './components/About'
-import Sidebar from './components/Sidebar'
-import Product from './components/Products'
 import { Route, Routes } from 'react-router-dom'
-import Home from './components/Home'
 import { useSelector, useDispatch } from 'react-redux'
+import Home from './pages/Home'
+import About from './pages/About'
+import ProductPage from './pages/ProductPage'
+import BottomNavBar from './components/bottomNavBar'
+import Header from './components/Header'
 
 
 const App = () => {
@@ -18,14 +19,16 @@ const App = () => {
   return (
    
     <div>
-      {showCount}
-      <button className='counter' onClick={Counter}>Days left {count}</button>
-      <Sidebar />
+    
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />}  />
-        <Route path="/products" element={<Product />} />
+        <Route path="/products" element={<ProductPage />} />
      </Routes>
+    
+      {showCount}
+      <button className='counter' onClick={Counter}>Days left {count}</button>
+     
       
      </div>
     
