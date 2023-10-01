@@ -2,7 +2,9 @@
     display: flex;
     justify-content: space-around;
     align-items: center;
-    background-color: aquamarine;
-    height: 55px;
+    background-color: rgb(160, 226, 204);
+    height: 65px;
     font-size: 1.4rem;
+    
+  
 }

@@ -1,0 +1,9 @@
+.user {
+    display: grid;
+    grid-template-columns: 400px;
+    gap: 10px;
+}
+
+.user input {
+    width: 400px;
+}

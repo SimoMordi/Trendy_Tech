@@ -1,8 +1,8 @@
 #title {
     text-align: center;
-    margin: auto;
-    font-size: 4.5rem;
-    color: rgb(11, 125, 141);
+    margin-top: 25px;
+    font-size: 2.5rem;
+    color: rgb(9, 162, 183);
     cursor: pointer;
 }
 
@@ -13,10 +13,10 @@
    
 }
 #input {
-    height: 35px;
-    width: 500px;
-    border-radius: 15px;
-    border: 2px solid rgb(153, 145, 145);
-    color: rgb(183, 178, 178);
-    
+    height: 55px;
+    width: 700px;
+    border-radius: 35px;
+    border: 2px solid rgb(161, 157, 157);
+    background-color: hwb(0 100% 0%);
+    padding: 5px;
 }

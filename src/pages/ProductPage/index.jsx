@@ -1,5 +1,6 @@
 import Header from "../../components/Header";
 import BottomNavBar from "../../components/bottomNavBar";
+
 import ProductDisplay from "../ProductDisplay";
 
 
