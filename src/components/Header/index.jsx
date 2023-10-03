@@ -14,7 +14,8 @@ const Header = () => {
           
 
      <form id='search'>
-    <input type="text" id='input' placeholder= "Search Only fans...         Whats your heart desire today" />      
+    <input type="text" id='input' placeholder= "🔍  Search Whats your heart desire today" />      
+         
      </form>
 
     </div>
