@@ -16,21 +16,13 @@ const Cart = () => {
 
   return (
     <div>
-       <Header />
-       <br />
+     
+      
       <button onClick={handleClick}>
         {`Days Left +${showCounter}`}
       </button>
       <button className='cart' onClick={() => dispatch(decrement())}>--</button>
-       <br />
-       <br />
-       <br />
-       <br />
-       <br />
-       <br />
-       <br />
-       <br />
-      <BottomNavBar />
+       
          
     </div>
    

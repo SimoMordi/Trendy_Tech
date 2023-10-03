@@ -1,20 +1,10 @@
-import Header from "../../components/Header";
-import BottomNavBar from "../../components/bottomNavBar";
-
+import './index.css'
 
 const Values = () => {
 
   return (
-    <div>
-      <Header />
-      <br />
-       <br />
-       <br />
-       <br />
-       <br />
-       <br />
-       <br />
-      <BottomNavBar />
+    <div className="values">
+      About Us 
     </div>
   );
 }

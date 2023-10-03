@@ -5,6 +5,6 @@
     background-color: rgb(160, 226, 204);
     height: 65px;
     font-size: 1.4rem;
-    
+    z-index: 2 ;
   
 }

@@ -1,0 +1,11 @@
+.carousel-inner img{
+    width: 100vw; 
+    max-height: 93vh;
+   object-fit: cover;
+}
+
+.slide{
+        
+    position: absolute;
+    top: 0;
+}

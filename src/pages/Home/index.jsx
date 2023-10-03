@@ -1,26 +1,17 @@
-
-import './index.css'
 import Header from '../../components/Header';
 import BottomNavBar from '../../components/bottomNavBar';
+import ControlledCarousel from './Home-Image';
 
-const Home = () => {
-  
-  
+import './index.css'
 
+function Home() {
   return (
-    <div>
-      <Header />
-       <br />
-       <br />
-       <br />
-       <br />
-       <br />
-       <br />
-       <br />
-      <BottomNavBar />
-    </div>
+    <div id='carousel-img'>
+        
+      <ControlledCarousel />
 
-  )
+    </div>
+  );
 }
 
 export default Home;

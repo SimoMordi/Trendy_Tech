@@ -16,7 +16,7 @@ const UserProfile = () => {
   return (
 
     <div>
-        <Header />
+        
         <h1 id='userProfile'>UserProfile</h1>
 
       <form className="user" >
@@ -36,11 +36,9 @@ const UserProfile = () => {
         <input type="number" value="" />
         <button>Submit</button>
       </form>
-       <br />
-       <br />
-       <br />
+      
        
-        <BottomNavBar />
+       
     </div>
   )
 }

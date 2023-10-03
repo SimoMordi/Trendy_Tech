@@ -7,13 +7,17 @@ import Cart from './components/cart'
 import UserProfile from './components/UserProfile'
 import Values from './pages/Values'
 import WishList from './components/WishList'
+import BottomNavBar from './components/bottomNavBar'
+import Header from './components/Header'
+import ControlledCarousel from './pages/Home/Home-Image'
 
 
 const App = () => {
    
   return (
-      <div>
+      <div id='App'>
         
+        <Header />
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/values" element={<Values />}  />
@@ -22,6 +26,7 @@ const App = () => {
           <Route path="/products" element={<ProductPage />} />
           <Route path="/WishList" element={<WishList />} />
         </Routes>
+        <BottomNavBar />
       </div>          
     
   )

@@ -9,9 +9,9 @@ const ProductPage = () => {
   
     return (
       <div>
-        <Header />
+       
         <ProductDisplay />
-        <BottomNavBar />
+        
       </div>
     );
   };
