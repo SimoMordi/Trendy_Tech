@@ -2,14 +2,13 @@
 import './App.css'
 import { Route, Routes } from 'react-router-dom'
 import Home from './pages/Home'
-import ProductPage from './pages/ProductPage'
 import Cart from './components/cart'
 import UserProfile from './components/UserProfile'
 import Values from './pages/Values'
 import WishList from './components/WishList'
 import BottomNavBar from './components/bottomNavBar'
 import Header from './components/Header'
-import ControlledCarousel from './pages/Home/Home-Image'
+import ProductPage from './pages/ProductDisplay'
 
 
 const App = () => {
@@ -27,6 +26,7 @@ const App = () => {
           <Route path="/WishList" element={<WishList />} />
         </Routes>
         <BottomNavBar />
+        
       </div>          
     
   )

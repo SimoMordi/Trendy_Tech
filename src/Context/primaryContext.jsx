@@ -1,21 +1,18 @@
-import { createContext, useState } from "react";
-
-
+import { createContext } from "react";
+import fetchProducts from "../components/FetchProducts";
 
 // create context
-export const primaryContext = createContext();
-const PrimaryProvider = (props) => {
+const ProductContext = createContext();
+// craete provider component
+const PrimaryProvider = ({ children }) => {
+    const { products } = fetchProducts();
 
- 
-   
- 
 
     return (
-        <primaryContext.Provider value={{
-            products, setProducts
-        }}>
-                {props.children}
-        </primaryContext.Provider>
+
+        <ProductContext.Provider value={{ products }}>
+            {children}
+        </ProductContext.Provider>
     )
 }
-export default PrimaryProvider;
+export { PrimaryProvider, ProductContext }
