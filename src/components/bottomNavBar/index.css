@@ -2,9 +2,15 @@
     display: flex;
     justify-content: space-around;
     align-items: center;
-    background-color: rgb(160, 226, 204);
+    background-color: rgb(8, 128, 184);
     height: 65px;
     font-size: 1.4rem;
+    font-weight: 500;
     z-index: 2 ;
+    
   
+}
+nav a {
+    text-decoration: underline;
+    color: rgb(68, 32, 120);
 }

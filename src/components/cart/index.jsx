@@ -1,8 +1,9 @@
 import { useSelector, useDispatch } from 'react-redux'
 import './index.css'
 import { decrement, increment } from '../../Redux/slices/counterSlice'
-import Header from '../Header'
-import BottomNavBar from '../bottomNavBar'
+
+
+
 
 
 const Cart = () => {
@@ -17,7 +18,7 @@ const Cart = () => {
   return (
     <div>
      
-      
+    
       <button onClick={handleClick}>
         {`Days Left +${showCounter}`}
       </button>

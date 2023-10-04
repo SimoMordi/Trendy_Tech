@@ -1,13 +1,14 @@
 
 import { useContext } from 'react';
 import { ProductContext } from '../../Context/primaryContext';
+import './index.css'
 
 const ProductPage = () => {
 
   const { products } = useContext(ProductContext);
 
   return (
-    <div className="productDisplay">
+    <div  id="productDisplay">
 
       {products.map((product) => (
 
