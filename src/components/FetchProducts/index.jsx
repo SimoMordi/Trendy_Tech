@@ -2,26 +2,26 @@ import axios from "axios";
 import { useEffect, useState } from "react"
 
 
-const fetchProducts = () => {
-    const [products, setProducts] = useState([]);
-    const [error, setError] = useState(null);
+const getProducts = () => {
+  const [products, setProducts] = useState([]);
+ 
 
-    useEffect(() => {
-      const fetchData = async () => {
-          try {
-            const response = await axios.get('https://fakestoreapi.com/products');
-            setProducts(response.data);
-          } catch (error) {
-            console.error(error);
-            setError('Failed to fetch data')
-          }
-      }
-      fetchData()
-    }, [])
+  useEffect(() => {
+    const apiKey = "YOUR_API_KEY";
+    const apiURL = `https://api.redcircleapi.com/request?api_key=${apiKey}&type=category&category_id=5xtg8`;
 
-  return (
-        { products, error }
-  )
-}
+    axios.get(apiURL)
+      .then((response) => {
+      
+        const data = response.data.category_results;
+        setProducts(data);
+      })
+  
+  }, []);
 
-export default fetchProducts
+  return { products };
+};
+
+export default getProducts
+
+
