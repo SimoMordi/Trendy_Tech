@@ -1,5 +1,5 @@
-import Header from '../Header'
-import BottomNavBar from '../bottomNavBar'
+
+
 import './index.css'
 
 const UserProfile = () => {

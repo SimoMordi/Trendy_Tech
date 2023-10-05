@@ -7,8 +7,10 @@ import UserProfile from './components/UserProfile'
 import Values from './pages/Values'
 import WishList from './components/WishList'
 import BottomNavBar from './components/bottomNavBar'
-import Header from './components/Header'
+
 import ProductPage from './pages/ProductDisplay'
+import Header from './components/HeaderBar/Header'
+import SearchBar from './components/HeaderBar/SearchBar'
 
 
 const App = () => {
@@ -17,6 +19,7 @@ const App = () => {
       <div id='App'>
         
         <Header />
+        <SearchBar />
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/values" element={<Values />}  />

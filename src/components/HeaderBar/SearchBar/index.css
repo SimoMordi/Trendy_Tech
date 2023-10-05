@@ -1,35 +1,5 @@
 
-
- #header p{
-    background-image:url(https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885_640.jpg);
-    text-align: center;
-    margin-top: 0;
-    font-size: 4.5rem;
-    display: inline-block;
-    color: transparent;
-    -webkit-background-clip: text;
-    background-clip: text;
-    cursor: pointer;
-    width: 100%;
-    font-weight: 700;
-    -webkit-text-stroke: 1px rgb(230, 220, 220);
-}
-
-#header{
-    z-index: 1;
-    position: relative; 
-    height: 100vh;    
-}
-
-    
-#search {
-    display: flex;
-    justify-content: center;
-    align-items: center; 
-   
-   
-}
-#input {
+#searchInput {
     height: 55px;
     width: 700px;
     border-radius: 35px;
@@ -44,9 +14,8 @@
     overflow: hidden;
     background-repeat: no-repeat;
     background-size: 120%; 
-
-
 }
+
 
 ::placeholder {
     color: white;
@@ -54,4 +23,15 @@
     font-size: 1.25rem;
 }
 
+#search {
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+      
+}
 
+#searchBar{
+    z-index: 1;
+    position: relative; 
+     
+}

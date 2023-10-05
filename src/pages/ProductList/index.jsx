@@ -1,4 +1,4 @@
-const index = () => {
+
   const products = [
     {
       id: "1",
@@ -301,7 +301,7 @@ const index = () => {
     },
   ];
 
-  return <div></div>;
-};
+  
 
-export default index;
+
+
