@@ -4,13 +4,14 @@ import { Route, Routes } from 'react-router-dom'
 import Home from './pages/Home'
 import Cart from './components/cart'
 import UserProfile from './components/UserProfile'
-import Values from './pages/Values'
+
 import WishList from './components/WishList'
 import BottomNavBar from './components/bottomNavBar'
 
 import ProductPage from './pages/ProductDisplay'
 import Header from './components/HeaderBar/Header'
 import SearchBar from './components/HeaderBar/SearchBar'
+import About from './pages/about'
 
 
 
@@ -23,7 +24,7 @@ const App = () => {
         <SearchBar />
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="/values" element={<Values />}  />
+          <Route path="/about" element={<About />}  />
           <Route path="/cart" element={<Cart />}  />
           <Route path="/userProfile" element={<UserProfile />}  />
           <Route path="/products" element={<ProductPage />} />

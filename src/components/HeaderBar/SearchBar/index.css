@@ -9,7 +9,8 @@
     background-color: transparent;
     border-color: none;
     border-width: 0.5px;
-    background-image: url(https://static.vecteezy.com/system/resources/thumbnails/008/309/385/small/transparent-rectangular-glass-for-text-and-labels-signboard-png.png);
+    /* background-image: url(https://static.vecteezy.com/system/resources/thumbnails/008/309/385/small/transparent-rectangular-glass-for-text-and-labels-signboard-png.png); */
+    background-image: url(https://icons8.com/icon/132/search.png);
     background-position: center;
     overflow: hidden;
     background-repeat: no-repeat;
@@ -32,6 +33,8 @@
 
 #searchBar{
     z-index: 1;
-    position: relative; 
+    position: fixed;
+    top: 150px;
+    width: 100%; 
      
 }

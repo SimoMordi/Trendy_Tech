@@ -1,22 +1,35 @@
 #productDisplay {
+    margin-top: 225px;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr ;
-    
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    gap: 18px;
+}
+.productImg {
+    max-width: 180px;
+    max-height: 180px;
+    margin: auto;
     
 }
 
-#productImg {
-   max-width: 200px;
-    max-height: 200px;
-}
-
-#card{
-    max-width: 220px;
-    padding: 10px;
-    margin: 10px;
-    background-color: rgb(192, 230, 230);
-    box-shadow: 0 0 50px rgb(196, 185, 185);
+#card {
+    display: grid;
+    grid-template-rows: 3fr 1fr 30px 40px;
+    background: #fcfcfc; 
+    gap: 8px; 
+   
     border-radius: 10px;
-    max-height: 400px;
-    overflow: hidden;
+}
+
+
+
+.name {
+    font-weight: 700;
+}
+
+.brand {
+    font-weight: 200;
+}
+
+.price {
+    font-weight: 600;
 }

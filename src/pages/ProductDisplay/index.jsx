@@ -14,10 +14,10 @@ const ProductPage = () => {
     <div id="productDisplay">
       {filteredProducts.map((product) => (
         <div id="card" key={product.id}>
-          <h4>{product.name}</h4>
-          <h5>Category: {product.maker}</h5>
-          <h4>Price: $ {product.price}</h4>
-          <img id="productImg" src={product.image} />
+          <img className="productImg" src={product.image} />
+          <p className="name">{product.name}</p>
+          <p className="brand">Brand: {product.maker}</p>
+          <p className="price"> ${product.price}</p>
         </div>
       ))}
     </div>
