@@ -13,8 +13,9 @@ import Header from './components/HeaderBar/Header'
 import SearchBar from './components/HeaderBar/SearchBar'
 
 
+
 const App = () => {
-   
+  
   return (
       <div id='App'>
         

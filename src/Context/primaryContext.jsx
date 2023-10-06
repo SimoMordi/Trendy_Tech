@@ -325,11 +325,11 @@ const PrimaryProvider = ({ children }) => {
 
   return (
     <productContext.Provider
-      value={{ myProducts, searchTerm, setSearchTerm }}
+      value={{ myProducts, setmyProducts, searchTerm, setSearchTerm }}
     >
       {children}
     </productContext.Provider>
   );
 };
 export { PrimaryProvider };
-export const useProductContext = () => {return useContext(productContext)}
+export const useProductContext = () => useContext(productContext)

@@ -1,14 +1,12 @@
 
+
 import ControlledCarousel from './Home-Image';
 
+const Home = () => {
 
-
-function Home() {
   return (
     <div id='carousel-img'>
-        
       <ControlledCarousel />
-
     </div>
   );
 }
