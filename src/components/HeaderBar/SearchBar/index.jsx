@@ -1,5 +1,7 @@
 import { useState } from 'react';
 import PopUp from '../../Pop-up';
+import 'font-awesome/css/font-awesome.min.css';
+
 
 // import { useProductContext } from '../../../Context/if-I-find-good-Api';
 import './index.css'
@@ -36,7 +38,7 @@ const SearchBar = () => {
           type="text"
           value={search}
           onChange={handleChange}
-          placeholder="🔍  Search What's your heart desire today"
+          placeholder="   🔍 What Ultimate Tech Are You Questing For?"
 
         />
       </form>
