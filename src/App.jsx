@@ -2,15 +2,14 @@
 import './App.css'
 import { Route, Routes } from 'react-router-dom'
 import Home from './pages/Home'
-
-import UserProfile from './components/UserProfile'
-import WishList from './components/WishList'
+import WishList from './pages/WishList'
 import BottomNavBar from './components/bottomNavBar'
 import ProductPage from './pages/ProductDisplay'
 import Header from './components/HeaderBar/Header'
 import SearchBar from './components/HeaderBar/SearchBar'
 import About from './pages/about'
-import Cart from './components/cart'
+import Cart from './pages/cart'
+import UserProfile from './pages/UserProfile'
 
 
 

@@ -1,16 +1,16 @@
 import { useWishListContext } from "../../Context/WishlistContext"
-
+import './index.css'
 
 
 
 
 const WishList = () => {
 
-  const { WishList } = useWishListContext()
+  const { wishList } = useWishListContext()
 
 
   return (
-    <div>
+    <div id="wishList">
       <h1>Wish List</h1>
       {wishList.length === 0 ? (
         <p>No items in Wishlist</p>

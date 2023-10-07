@@ -1,10 +1,12 @@
 import { useProductContext } from "../../Context/ProductContext";
+import './index.css'
+
 
 const Cart = () => {
   const { cartItems } = useProductContext();
 
   return (
-    <div>
+    <div id="cart">
      
       <h1>Cart</h1>
       {cartItems && cartItems.length > 0 ? (

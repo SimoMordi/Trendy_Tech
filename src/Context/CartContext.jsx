@@ -7,10 +7,10 @@ export const useCartContext = () => useContext(CartContext)
 const CartProvider = ({children}) => {
         const [cartItems, setCartItems] = useState([])
 
-            const addToCart = (productToAdd) => {
-                //logic for addtoCart
+        const addToCart = (productToAdd) => {
+            //logic for addtoCart
 
-            }
+        }
 
 
   return (

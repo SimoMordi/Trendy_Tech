@@ -1,10 +1,14 @@
-.user {
+#userProfile{
+    margin-top: 225px;
+} 
+
+
+#user {
     display: grid;
     grid-template-columns: 400px;
     gap: 10px;
 }
 
-.user input {
+#user input {
     width: 400px;
 }
-    
