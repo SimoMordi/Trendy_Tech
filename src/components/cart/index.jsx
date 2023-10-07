@@ -1,33 +1,24 @@
-import { useSelector, useDispatch } from 'react-redux'
-import './index.css'
-import { decrement, increment } from '../../Redux/slices/counterSlice'
-
-
-
-
+import { useProductContext } from "../../Context/ProductContext";
 
 const Cart = () => {
-
-    const showCounter = useSelector((store) => store.counter)
-    const dispatch = useDispatch()
-
-    const handleClick = () => {
-        dispatch(increment())
-    }
+  const { cartItems } = useProductContext();
 
   return (
     <div>
      
-    
-      <button onClick={handleClick}>
-        {`Days Left +${showCounter}`}
-      </button>
-      <button className='cart' onClick={() => dispatch(decrement())}>--</button>
-       
-         
+      <h1>Cart</h1>
+      {cartItems && cartItems.length > 0 ? (
+        cartItems.map((item, index) => (
+          <div key={index}>
+            <span>{item.name}</span>
+            <span>{item.price}</span>
+          </div>
+        ))
+      ) : (
+        <p>Your cart is empty</p>
+      )}
     </div>
-   
-  )
-}
+  );
+};
 
-export default Cart
+export default Cart;

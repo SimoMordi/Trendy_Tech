@@ -1,48 +1,47 @@
 import { useState } from 'react';
-import PopUp from '../../../pages/Pop-up';
-import { useProductContext } from '../../../Context/primaryContext';
+import PopUp from '../../Pop-up';
+
+// import { useProductContext } from '../../../Context/if-I-find-good-Api';
 import './index.css'
+import { useProductContext } from '../../../Context/ProductContext';
 
 const SearchBar = () => {
-  // Getting context values
-  const { myProducts, searchTerm, setSearchTerm } = useProductContext()
-  
-  // Local state for managing Popup visibility
-  const [openPopUp, setopenPopUp] = useState(false);
-  
-  // Filtering products based on searchTerm
-  const filteredProducts = myProducts.filter(product =>
-    product.name.toLowerCase().includes(searchTerm.toLowerCase())
-  );
-  
-  // Handling input change
-  const handleChange = (event) => {
-    setSearchTerm(event.target.value)
-    if (event.target.value !== "") {
-      setopenPopUp(true);  // Open popup if search term is not empty
-    } else {
-      setopenPopUp(false); // Close popup if search term is empty
-    }
+
+  const { search, setSearch, filteredProducts, myProducts,
+    setMyProducts, } = useProductContext();
+
+
+  const [isPopUpOpen, setIsPopUpOpen] = useState(false);
+
+
+
+  const handleSearch = (event) => {
+    const newSearch = event.target.value
+    setSearch(newSearch)
   };
-  
-  
+
+  const togglePopUp = (shouldShow) => {
+    setIsPopUpOpen(shouldShow)
+  }
+  const handleChange = (event) => {
+    handleSearch(event)
+    togglePopUp(event.target.value !== "")
+  }
+
   return (
     <div id='searchBar'>
-      <form id="search">
+      <form id='search'>
         <input
-          id="searchInput"
+          id='searchInput'
           type="text"
-          value={searchTerm}
+          value={search}
           onChange={handleChange}
           placeholder="🔍  Search What's your heart desire today"
+
         />
       </form>
-      {openPopUp && 
-        <PopUp 
-          filteredProducts={filteredProducts}
-          closePopUp={() => setopenPopUp(false)}  // Function to close the popup
-        />
-      }
+      {isPopUpOpen && <PopUp />}
+
     </div>
   );
 };

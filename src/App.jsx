@@ -2,16 +2,17 @@
 import './App.css'
 import { Route, Routes } from 'react-router-dom'
 import Home from './pages/Home'
-import Cart from './components/cart'
-import UserProfile from './components/UserProfile'
 
+import UserProfile from './components/UserProfile'
 import WishList from './components/WishList'
 import BottomNavBar from './components/bottomNavBar'
-
 import ProductPage from './pages/ProductDisplay'
 import Header from './components/HeaderBar/Header'
 import SearchBar from './components/HeaderBar/SearchBar'
 import About from './pages/about'
+import Cart from './components/cart'
+
+
 
 
 
@@ -22,6 +23,7 @@ const App = () => {
         
         <Header />
         <SearchBar />
+       
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />}  />

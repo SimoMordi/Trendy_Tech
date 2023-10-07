@@ -1,14 +1,14 @@
-import React, { useContext } from "react";
+
+import { useProductContext } from '../../Context/ProductContext';
 import './index.css';
-import { productContext, useProductContext } from "../../Context/primaryContext";
+// import { useProductContext } from "../../Context/if-I-find-good-Api";
+
+
 
 const ProductPage = () => {
-  // const { products } = useContext(productContext);
-  const { myProducts, searchTerm } = useProductContext()
+  // const { myProducts } = useContext(productContext);
+  const { filteredProducts, } = useProductContext()
 
-  const filteredProducts = myProducts.filter((product) => 
-    product.name.toLowerCase().includes(searchTerm.toLowerCase())
-  );
 
   return (
     <div id="productDisplay">
@@ -21,8 +21,8 @@ const ProductPage = () => {
         </div>
       ))}
     </div>
-  );     
-  
+  );
+
 };
 
 export default ProductPage;

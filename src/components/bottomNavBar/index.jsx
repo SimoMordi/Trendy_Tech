@@ -12,7 +12,7 @@ const BottomNavBar = () => {
           <Link to="/products">Products</Link>
           <Link to="/wishlist">Wish List</Link>
           <Link to="/cart">Cart</Link>
-          <Link to="/userProfile">User&#128100;</Link>
+          <Link to="/userProfile">&#128100;</Link>
       </nav>
     )
   }
