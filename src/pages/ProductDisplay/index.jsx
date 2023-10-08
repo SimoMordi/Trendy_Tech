@@ -11,9 +11,9 @@ const ProductPage = () => {
 
 
   return (
-    <div id="productDisplay">
+    <div className="productDisplay">
       {filteredProducts.map((product) => (
-        <div id="card" key={product.id}>
+        <div className="card" key={product.id}>
           <img className="productImg" src={product.image} />
           <p className="name">{product.name}</p>
           <p className="brand">Brand: {product.maker}</p>

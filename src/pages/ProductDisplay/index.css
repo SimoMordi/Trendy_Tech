@@ -1,4 +1,4 @@
-#productDisplay {
+.productDisplay {
     margin-top: 225px;
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
@@ -7,20 +7,16 @@
 .productImg {
     max-width: 180px;
     max-height: 180px;
-    margin: auto;
-    
+    margin: auto;    
 }
 
-#card {
+.card {
     display: grid;
     grid-template-rows: 3fr 1fr 30px 40px;
     background: #fcfcfc; 
     gap: 8px; 
-   
     border-radius: 10px;
 }
-
-
 
 .name {
     font-weight: 700;

@@ -11,7 +11,7 @@ const PopUp = () => {
   const { addToCart} = useCartContext();
   const [isPopUpOpen, setIsPopUpOpen] = useState(true);
 
-  const closePopUp = () => setIsPopUpOpen(false); // Corrected to actually close the pop-up
+  const closePopUp = () => setIsPopUpOpen(false); 
 
   
 
@@ -20,14 +20,15 @@ const PopUp = () => {
       {filteredProducts.map((product) => (
         <div key={product.id}>
           {isPopUpOpen && (
-            <div className="card popup-content">
+            <div className="popup-card popup-content">
               <p>{product.name}</p>
               <p>{product.maker}</p>
               <h4>Price: ${product.price}</h4>
               <img className="popUpImg" src={product.image} alt={product.name} />
+              
               <button onClick={() => addToCart(product)}>Add to Cart</button>
               <button onClick={() => addToWishList(product)}>Add to Wishlist</button>
-              <button onClick={closePopUp}>Close</button>  {/* Used the closePopUp function */}
+              <button onClick={closePopUp}>Close</button> 
             </div>
           )}
         </div>

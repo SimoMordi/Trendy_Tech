@@ -8,15 +8,16 @@ const CartProvider = ({children}) => {
         const [cartItems, setCartItems] = useState([])
 
         const addToCart = (productToAdd) => {
-            //logic for addtoCart
+            setCartItems((prevCartItems) => {
+                return [...prevCartItems, productToAdd]
+            })
 
         }
 
 
   return (
     <CartContext.Provider value= {{
-        cartItems,
-        setCartItems,
+        cartItems, setCartItems,
         addToCart,
     }}>
 

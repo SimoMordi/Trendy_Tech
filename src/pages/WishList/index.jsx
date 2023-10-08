@@ -2,22 +2,19 @@ import { useWishListContext } from "../../Context/WishlistContext"
 import './index.css'
 
 
-
-
 const WishList = () => {
-
   const { wishList } = useWishListContext()
 
 
   return (
-    <div id="wishList">
+    <div className="wishList productDisplay">
       <h1>Wish List</h1>
-      {wishList.length === 0 ? (
-        <p>No items in Wishlist</p>
-      ) : (
+      {wishList.length === 0 ? (<p>No items in Wishlist</p>)
+       : (
         wishList.map((product) => (
-          <div key={product.id}>
-            <h2>{product.name}</h2>
+          <div id="wishCard" key={product.id}>
+            <h4>{product.name}</h4>
+            <img className="productImg" src={product.image} />
             <p>{product.maker}</p>
             <p>Price: ${product.price}</p>
 

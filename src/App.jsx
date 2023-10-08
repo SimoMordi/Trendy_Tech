@@ -7,9 +7,9 @@ import BottomNavBar from './components/bottomNavBar'
 import ProductPage from './pages/ProductDisplay'
 import Header from './components/HeaderBar/Header'
 import SearchBar from './components/HeaderBar/SearchBar'
-import About from './pages/about'
 import Cart from './pages/cart'
 import UserProfile from './pages/UserProfile'
+import About from './pages/About'
 
 
 

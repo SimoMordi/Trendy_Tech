@@ -9,13 +9,8 @@ import { useProductContext } from '../../../Context/ProductContext';
 
 const SearchBar = () => {
 
-  const { search, setSearch, filteredProducts, myProducts,
-    setMyProducts, } = useProductContext();
-
-
+  const { search, setSearch } = useProductContext();
   const [isPopUpOpen, setIsPopUpOpen] = useState(false);
-
-
 
   const handleSearch = (event) => {
     const newSearch = event.target.value

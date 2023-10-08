@@ -1,3 +1,9 @@
 #wishList{
     margin-top: 225px;  
 }
+#whishCard {
+    display: grid;
+    background: #fcfcfc; 
+    gap: 8px;    
+    border-radius: 10px;
+}

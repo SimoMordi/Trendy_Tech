@@ -1,11 +1,11 @@
 import { createContext, useContext, useState } from "react";
 
-
-
 export const ProductContext = createContext();
 export const useProductContext = () => useContext(ProductContext);
 
+
 export const ProductProvider = ({children}) => {
+
     const [myProducts, setMyProducts] = useState([
         {
           id: "1",
@@ -317,10 +317,8 @@ export const ProductProvider = ({children}) => {
 
     return (
         <ProductContext.Provider value ={{
-            myProducts,
-            setMyProducts,
-            search,
-            setSearch,
+            myProducts,setMyProducts,
+            search, setSearch,
             filteredProducts,
         }}>
             {children}
