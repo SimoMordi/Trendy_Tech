@@ -3,6 +3,17 @@ import { Carousel } from 'react-bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './index.css'
 import img1 from "../../../assets/1.jpg"
+import img2 from "../../../assets/2.jpg"
+import img3 from "../../../assets/3.jpg"
+import img4 from "../../../assets/4.jpg"
+import img5 from "../../../assets/5.jpg"
+import img6 from "../../../assets/6.jpg"
+import img7 from "../../../assets/7.jpg"
+import img8 from "../../../assets/8.jpg"
+import img9 from "../../../assets/9.jpg"
+import img16 from "../../../assets/16.jpg"
+
+
 
 
 function ControlledCarousel() {
@@ -22,39 +33,39 @@ function ControlledCarousel() {
       </Carousel.Item>
 
       <Carousel.Item>
-        <img src="/src/assets/2.jpg" />
+        <img src={img2} />
       </Carousel.Item>
 
       <Carousel.Item>
-        <img src="/src/assets/3.jpg" />
+        <img src={img3} />
       </Carousel.Item>
 
       <Carousel.Item>
-        <img src="/src/assets/4.jpg" />
+        <img src={img4} />
       </Carousel.Item>
 
       <Carousel.Item>
-        <img src="/src/assets/5.jpg" />
+        <img src={img5} />
       </Carousel.Item>
 
       <Carousel.Item>
-        <img src="/src/assets/6.jpg" />
+        <img src={img6} />
       </Carousel.Item>
 
       <Carousel.Item>
-      <img src="/src/assets/7.jpg" />
+      <img src={img7} />
       </Carousel.Item>
 
       <Carousel.Item>
-      <img src="/src/assets/8.jpg" />
+      <img src={img8} />
       </Carousel.Item>
 
       <Carousel.Item>
-      <img src="/src/assets/9.jpg" />
+      <img src={img9} />
       </Carousel.Item>
 
       <Carousel.Item>
-      <img src="/src/assets/16.jpg" />
+      <img src= {img16} />
       </Carousel.Item>
 
       
