@@ -29,7 +29,7 @@ const Carousel = () => {
         ))
         }
         <div className="carousel-text">
-        <h1>we're serious about our products but not too serious about ourselves. Let's have a Fun shopping experience</h1>
+        <h1>Farewell Bestbuy Hello Trendy_Tech, we're curious about our customers and serious about our products. Let's have a Fun shopping experience</h1>
       </div>
     </div>
     
