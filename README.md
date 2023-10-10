@@ -1,8 +1,21 @@
 # React + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Trendy-Tech is an eCommerce platform designed for tech enthusiasts, by tech enthusiasts.A focus on high-end tech products.
+ Built using React with features like a global search bar, shopping cart functionality, and secure user login.
+Global Search Bar: Search for products from any page on the site.
+Shopping Cart: Add products to your cart and manage them with ease.
+User Authentication: Secure login and user management functionality.
+Wishlist: Save products you're interested in for later.
+Product Categories: Browse products by categories like laptops, smartphones, and more.
+Order Summary: Detailed summary including tax and shipping estimates.
+Built with:
+React
+Context API
+Custom CSS
+Author:
+Simo Mordi
+Special thanks to everyone who contributed to this project;
 
-Currently, two official plugins are available:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+link:   https://trendy-tech.netlify.app/
+        https://trendy-tech-n4rm.onrender.com/
