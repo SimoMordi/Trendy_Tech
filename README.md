@@ -1,6 +1,6 @@
 # React + Vite
 
-Trendy-Tech is an eCommerce platform designed for tech enthusiasts, by tech enthusiasts.A focus on high-end tech products.
+Trendy-Tech is an eCommerce platform designed for tech enthusiasts, by tech enthusiasts. A focus on high-end tech products.
  Built using React with features like a global search bar, shopping cart functionality, and secure user login.
 Global Search Bar: Search for products from any page on the site.
 Shopping Cart: Add products to your cart and manage them with ease.
