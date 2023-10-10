@@ -1,13 +1,16 @@
 import { useEffect, useState } from "react"
 import './Carousel.css'
+import img17 from "../../assets/17.jpg"
+import img18 from "../../assets/18.jpg"
+import img13 from "../../assets/13.jpg"
 
 const Carousel = () => {
 
     const [current, setCurrent] = useState(0)
     const images = [
-        'src/assets/17.jpg',
-        'src/assets/18.jpg',
-        'src/assets/13.jpg'
+       img17 ,
+        img18 ,
+        img13
     ]
 
     useEffect(() => {
