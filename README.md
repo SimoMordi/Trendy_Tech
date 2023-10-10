@@ -18,4 +18,4 @@ Special thanks to everyone who contributed to this project;
 
 
 link:   https://trendy-tech.netlify.app/
-        https://trendy-tech-n4rm.onrender.com/
+ or:       https://trendy-tech-n4rm.onrender.com/
