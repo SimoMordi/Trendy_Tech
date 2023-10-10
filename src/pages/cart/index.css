@@ -36,5 +36,6 @@
     font-size: 20px;
     border: none;
     cursor: pointer;
+    max-height: 60px;
   }
   

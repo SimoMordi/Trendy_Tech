@@ -15,6 +15,7 @@ cartItems.forEach(item => subTotal += item.price);
 
   return (
     <div id="cart">
+     
       <h1>Your Shopping Cart</h1>
       <div className="cart-content">
         <div className="cart-items">
@@ -32,7 +33,7 @@ cartItems.forEach(item => subTotal += item.price);
             ))
           )}
         </div>
-        
+        <button className="checkout-button">Proceed to Checkout</button>
         <div className="cart-summary">
           <h2>Order Summary</h2>
           <p>Price: ${subTotal.toFixed(2)}</p>
@@ -41,7 +42,7 @@ cartItems.forEach(item => subTotal += item.price);
           <p>Total: ${totalPrice.toFixed(2)}</p>
         </div>
       </div>
-      <button className="checkout-button">Proceed to Checkout</button>
+      
     </div>
   );
 }

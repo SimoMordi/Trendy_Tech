@@ -2,6 +2,7 @@ import { useState } from 'react';
 import { Carousel } from 'react-bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './index.css'
+import img1 from "../../../assets/1.jpg"
 
 
 function ControlledCarousel() {
@@ -17,7 +18,7 @@ function ControlledCarousel() {
 
     <Carousel className='slide' interval={5000}  activeIndex={index} onSelect={handleSelect}>
       <Carousel.Item>
-        <img src="/src/assets/1.jpg" />    
+        <img src={img1} />    
       </Carousel.Item>
 
       <Carousel.Item>
