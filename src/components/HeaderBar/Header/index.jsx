@@ -10,7 +10,7 @@ const Header = () => {
 
   return (
     <div id="header"> 
-    <p onClick={goToHomePage}>TRENDY-TECH</p>
+    <p onClick={goToHomePage}>TECH-TREND</p>
       
     </div>
   )
